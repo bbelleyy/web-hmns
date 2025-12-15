@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMNS - Premium Unisex Perfume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/HMNS-Main Logo.svg" >
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="about.html">Tentang</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Aroma yang membuat <span>momenmu</span> tak terlupakan</h1>
+            <p>Menghadirkan aroma yang membuat Anda merasakan cinta, perhatian, dan kenangan yang tak terlupakan.</p>
+            <a href="#products" class="btn-primary">Belanja Sekarang</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/banner.jpg" alt="HMNS Perfume" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>100% Natural</h3>
+                <p>Bahan alami berkualitas tinggi</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Tahan Lama</h3>
+                <p>Wangi bertahan 8-12 jam</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-venus-mars"></i>
+                </div>
+                <h3>Unisex</h3>
+                <p>Cocok untuk semua gender</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Premium</h3>
+                <p>Kualitas terjamin</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Koleksi Terbaru</h2>
+                <p>Pilihan wewangian eksklusif untuk setiap momen</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            <div class="view-all-wrapper">
+                <a href="products.html" class="btn-primary">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Siap Menemukan Aroma Signature Anda?</h2>
+            <p>Kunjungi koleksi lengkap kami dan temukan parfum yang sempurna untuk Anda</p>
+            <a href="products.html" class="btn-secondary">Lihat Semua Produk</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/HMNS-Main Logo.svg" >
+                    </a>
+                    <p>Premium unisex perfume untuk mengekspresikan kepribadian unik Anda.</p>
+                </div>
+                <div class="footer-nav-wrapper">
+                    <div class="footer-links">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="products.html">Produk</a></li>
+                            <li><a href="about.html">Tentang</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Kontak</h4>
+                        <p><i class="fas fa-envelope"></i> hmnsperfume@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 8141 3371 321</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HMNS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/filters.js"></script>
+    <script src="assets/js/detail.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
