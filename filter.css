@@ -1,0 +1,294 @@
+/* ===== Products Page Layout with Sidebar ===== */
+.products-page-layout {
+    background: var(--light);
+    min-height: calc(100vh - 80px);
+    padding-bottom: 60px;
+}
+
+.products-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--light);
+}
+
+.sidebar-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-header h3 i {
+    color: var(--secondary);
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+    margin-bottom: 15px;
+    border: 1px solid var(--light);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    padding: 15px;
+    background: var(--white);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.dropdown-toggle:hover {
+    background: var(--light);
+}
+
+.dropdown-toggle span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-toggle span i {
+    color: var(--secondary);
+    width: 20px;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    color: var(--gray);
+    font-size: 0.8rem;
+}
+
+.filter-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--light-accent);
+    transition: max-height 0.3s ease;
+}
+
+.filter-dropdown.open .dropdown-content {
+    max-height: 300px;
+}
+
+/* Filter Checkbox */
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.filter-checkbox:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.filter-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filter-checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--gray-light);
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.filter-checkbox input:checked ~ .checkmark {
+    border-color: var(--secondary);
+    background: var(--secondary);
+}
+
+.filter-checkbox input:checked ~ .checkmark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.filter-checkbox input:checked ~ span:last-child {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Reset Filter Button */
+.reset-filter-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: var(--light);
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.reset-filter-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    background: var(--white);
+}
+
+/* Products Content */
+.products-content {
+    min-height: 500px;
+}
+
+.products-header {
+    margin-bottom: 25px;
+}
+
+.products-header .filter-result {
+    font-size: 0.95rem;
+    color: var(--gray);
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.products-header .filter-result span {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ===== Filter Section (Legacy) ===== */
+.filter-section {
+    padding: 40px 20px;
+    background: var(--white);
+    border-bottom: 1px solid var(--light);
+}
+
+.products-hero {
+    padding: 150px 20px 80px;
+    background: linear-gradient(135deg, var(--light) 0%, var(--light-accent) 100%);
+    text-align: center;
+}
+
+.products-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.products-hero h1 span {
+    color: var(--secondary);
+}
+
+.products-hero p {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--primary-dark);
+    min-width: 120px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background: var(--light);
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    border-color: transparent;
+}
+
+.filter-result {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light);
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.filter-result span {
+    font-weight: 700;
+    color: var(--primary);
+}

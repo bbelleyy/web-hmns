@@ -1,0 +1,109 @@
+/* ===== CSS Variables ===== */
+:root {
+    --primary: #2c2c2c;
+    --primary-light: #4a4a4a;
+    --primary-dark: #1a1a1a;
+    --secondary: #c9a86c;
+    --accent: #d4b896;
+    --white: #ffffff;
+    --light: #f9f7f4;
+    --light-accent: #f5f0e8;
+    --gray: #6b6b6b;
+    --gray-light: #9a9a9a;
+    --dark: #1a1a1a;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+    --radius: 16px;
+    --radius-sm: 8px;
+}
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(30, 58, 95, 0.3);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(30, 58, 95, 0.4);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--white);
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Section Header ===== */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: var(--gray);
+    font-size: 1rem;
+}

@@ -1,0 +1,316 @@
+/* ===== Product Detail Page ===== */
+.product-detail {
+    padding: 120px 20px 80px;
+    min-height: 60vh;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 40px;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--primary);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Detail Image Section with Gallery */
+.detail-image-section {
+    position: sticky;
+    top: 100px;
+}
+
+.detail-image-main {
+    background: linear-gradient(135deg, var(--light-accent), var(--light));
+    border-radius: var(--radius);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.detail-image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery-thumb {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.gallery-thumb:hover {
+    opacity: 0.9;
+}
+
+.gallery-thumb.active {
+    opacity: 1;
+    border-color: var(--secondary);
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video Thumbnail */
+.gallery-thumb.video-thumb {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.gallery-thumb.video-thumb i {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+}
+
+.gallery-thumb.video-thumb span {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Legacy detail-image for fallback */
+.detail-image {
+    background: linear-gradient(135deg, var(--light-accent), var(--light));
+    border-radius: var(--radius);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.detail-image i {
+    font-size: 10rem;
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+.detail-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 20px;
+    background: var(--secondary);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.detail-gender-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.detail-gender-badge.unisex {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: var(--white);
+}
+
+.detail-gender-badge.pria {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+}
+
+.detail-gender-badge.wanita {
+    background: linear-gradient(135deg, #d4a574, #e8c4a0);
+    color: var(--dark);
+}
+
+.detail-info {
+    padding: 20px 0;
+}
+
+.detail-category {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.detail-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.detail-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.detail-desc {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.detail-specs {
+    background: var(--light);
+    padding: 25px;
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+
+.detail-specs h3 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light-accent);
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: var(--gray);
+}
+
+.spec-value {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.detail-notes {
+    margin-bottom: 30px;
+}
+
+.detail-notes h3 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.note-item {
+    text-align: center;
+    padding: 20px 15px;
+    background: var(--light);
+    border-radius: var(--radius-sm);
+}
+
+.note-item i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.note-type {
+    font-size: 0.75rem;
+    color: var(--gray-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.note-name {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
+
+/* Detail Page Buttons */
+.detail-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.shopee-btn-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #ee4d2d, #ff6633);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(238, 77, 45, 0.3);
+    transition: var(--transition);
+}
+
+.shopee-btn-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(238, 77, 45, 0.4);
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    transition: var(--transition);
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+}
+
+/* ===== Related Products ===== */
+.related-products {
+    padding: 80px 20px;
+    background: var(--light);
+}

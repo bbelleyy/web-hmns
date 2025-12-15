@@ -1,0 +1,465 @@
+/* ===== Responsive - Large Tablets ===== */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .features .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-nav-wrapper {
+        gap: 30px;
+    }
+}
+
+/* ===== Responsive - Tablets ===== */
+@media (max-width: 900px) {
+    .products-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-sidebar {
+        position: relative;
+        top: 0;
+    }
+}
+
+/* ===== Responsive - Small Tablets & Large Phones ===== */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .product-image {
+        height: 150px;
+    }
+    
+    .product-image i {
+        font-size: 2.5rem;
+    }
+    
+    .product-info {
+        padding: 12px;
+    }
+    
+    .product-name {
+        font-size: 0.95rem;
+    }
+    
+    .product-desc {
+        font-size: 0.75rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .product-price {
+        font-size: 0.9rem;
+    }
+    
+    .product-size {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+    
+    .shopee-btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        margin-top: 10px;
+    }
+    
+    .product-badge {
+        padding: 3px 10px;
+        font-size: 0.65rem;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .product-gender-badge {
+        padding: 3px 8px;
+        font-size: 0.6rem;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero {
+        padding: 100px 20px 60px;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-bottle {
+        width: 200px;
+        height: 280px;
+        font-size: 5rem;
+    }
+    
+    .features .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-icon-box {
+        width: 200px;
+        height: 200px;
+        font-size: 5rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-image-section {
+        position: relative;
+        top: 0;
+    }
+    
+    .detail-image-main {
+        height: 350px;
+    }
+    
+    .detail-image-gallery {
+        flex-wrap: wrap;
+    }
+    
+    .gallery-thumb {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .detail-image {
+        height: 350px;
+    }
+    
+    .detail-image i {
+        font-size: 6rem;
+    }
+    
+    .detail-name {
+        font-size: 2rem;
+    }
+    
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding: 30px 15px 20px;
+    }
+    
+    .footer-content {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-brand {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .footer-brand .logo {
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-brand .logo-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-brand p {
+        font-size: 0.8rem;
+        max-width: 280px;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+    
+    /* Wrapper untuk Menu dan Kontak 2 kolom */
+    .footer-nav-wrapper {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    .footer-links {
+        flex: 1;
+        text-align: left;
+        padding: 0 10px;
+    }
+    
+    .footer-contact {
+        flex: 1;
+        text-align: left;
+        padding: 0 10px;
+    }
+    
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul {
+        gap: 6px;
+    }
+    
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+    
+    .footer-contact p {
+        justify-content: flex-start;
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        gap: 6px;
+    }
+    
+    .footer-contact p i {
+        font-size: 0.85rem;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .social-links a {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 15px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+    
+    .why-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-group label {
+        min-width: auto;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .filter-sidebar {
+        padding: 20px 15px;
+    }
+    
+    .dropdown-toggle {
+        padding: 12px;
+    }
+    
+    .filter-checkbox {
+        padding: 10px 12px;
+    }
+}
+
+/* ===== Responsive - Mobile Phones ===== */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .features .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .product-image {
+        height: 120px;
+    }
+    
+    .product-image i {
+        font-size: 2rem;
+    }
+    
+    .product-info {
+        padding: 10px;
+    }
+    
+    .product-category {
+        font-size: 0.6rem;
+        margin-bottom: 3px;
+    }
+    
+    .product-name {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+    
+    .product-desc {
+        display: none;
+    }
+    
+    .product-footer {
+        padding-top: 8px;
+    }
+    
+    .product-price {
+        font-size: 0.85rem;
+    }
+    
+    .product-size {
+        display: none;
+    }
+    
+    .shopee-btn {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+        gap: 4px;
+    }
+    
+    .products-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* Footer Mobile Small */
+    .footer {
+        padding: 25px 12px 15px;
+    }
+    
+    .footer-content {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-brand {
+        padding-bottom: 12px;
+    }
+    
+    .footer-brand .logo {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .footer-brand .logo-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.7rem;
+    }
+    
+    .footer-brand p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        max-width: 250px;
+    }
+    
+    .footer-links,
+    .footer-contact {
+        width: 48%;
+    }
+    
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+    
+    .footer-links ul {
+        gap: 5px;
+    }
+    
+    .footer-links a {
+        font-size: 0.75rem;
+    }
+    
+    .footer-contact p {
+        font-size: 0.75rem;
+        gap: 5px;
+        margin-bottom: 4px;
+    }
+    
+    .footer-contact p i {
+        font-size: 0.8rem;
+    }
+    
+    .social-links {
+        gap: 8px;
+        margin-top: 8px;
+    }
+    
+    .social-links a {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 12px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
+}
